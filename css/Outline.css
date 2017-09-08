@@ -1,0 +1,24 @@
+table.table {
+    font-size: 1.2em;
+}
+
+/* tag */
+span.label {
+    margin-right: 3%;
+    font-size: 90%;
+}
+span.label-orange {
+    background-color: #F59F00;
+}
+span.label-green {
+    background-color: #008500;
+}
+span.label-blue {
+    background-color: #5bc0de;
+}
+span.label-purple {
+    background-color: #C678FF;
+}
+span.label-yellow {
+    background-color: #D9B300;
+}

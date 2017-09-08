@@ -1,0 +1,31 @@
+html {
+	font-family: 微軟正黑體, "Microsoft JhengHei", sans-serif;
+}
+
+body {
+	min-height: 1000px;
+	padding-top: 70px;
+	font-size: 16px;
+}
+
+div.jumbotron {
+	padding: 2% 4% 2% 4%;
+}
+div.jumbotron hr {
+	border:0; height:2px; background-color:#d4d4d4;
+	color:#d4d4d4	/* IE6 *//
+}
+div.namecard img {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+div.namecard h1 {
+	display: inline-block;
+}
+
+.about-tab {
+
+}
+.about-tab a {
+	color: black;
+}

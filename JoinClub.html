@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <title>NTUGDRCWeb</title>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harakuro">
+    <!-- FB meta data -->
+    <meta property="og:url" content="http://clubweb.ntugdrc.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="台大遊戲設計研究社" />
+    <meta property="og:description" content="想認識遊戲設計嗎？想研究遊戲嗎？歡迎加入台大遊戲設計研究社！" />
+    <meta property="og:image" content="http://clubweb.ntugdrc.com/img/logo.jpg" />
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/JoinClub.css">
+    <link rel="stylesheet" href="css/Loader.css">
+    <!-- favicon -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootbox.js -->
+    <script src="js/bootbox.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/JoinClub.js"></script>
+</head>
+
+<body>
+    <!--navbar -->
+    <nav></nav>
+    <!-- page -->
+    <div class="container jumbotron">
+        <div class="header-box">
+            <h2>Join NTU Game Design&Research Club</h2>
+        </div>
+		<div class="form-box">
+			<form id="form" role="form" autocomplete="off">
+				<div class="form-group row">
+					<div class="col-sm-6" id="form_Name_div">
+						<label class="control-label">名字</label>
+						<input type="text" class="form-control" id="form_Name">		
+					</div>
+					<div class="col-sm-6" id="form_FBName_div">
+						<label class="control-label">Facebook 的名字</label>
+						<input type="text" class="form-control" id="form_FBName" title="方便加入 FB 社團時確認身分">		
+					</div>
+				</div>
+				<div class="form-group row">
+                    <div class="col-sm-12">
+					    <label>是否為本校學生？</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="input-group" title="若是，請填寫系級學號">
+                            <span class="input-group-addon">
+                                <input type="radio" name="YNNTU" id="form_YNTU" value="是">
+                            </span>
+                            <div class="form-control form-control-static">
+                                是
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="input-group" title="若否，系級自由填寫所在單位">
+                            <span class="input-group-addon">
+                                <input type="radio" name="YNNTU" id="form_NNTU" value="否">
+                            </span>
+                            <div class="form-control form-control-static">
+                                否
+                            </div>
+                        </label>
+                    </div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-6" id="form_Department_div">
+						<label class="control-label">系級</label>
+						<input type="text" class="form-control" id="form_Department">		
+					</div>
+					<div class="col-sm-6" id="form_StudentID_div">
+						<label class="control-label">學號</label>
+						<input type="text" class="form-control" id="form_StudentID" title="會自動轉換成大寫">		
+					</div>
+				</div>
+				<div class="form-group" id="form_Email_div">
+					<label class="control-label">電子信箱 E-mail</label>
+					<input type="text" class="form-control" id="form_Email" title="通知社團訊息及聯絡使用">
+				</div>
+                <div class="Info-box">
+                    <hr>
+                    <p>※確認下列資訊有無錯誤，確認後按下 Submit 吧！</p>
+                    <hr>
+                    <p>姓名：<span id="info_Name"></span>先生/小姐</p>
+                    <p>Facebook：<span id="info_FBName"></span></p>
+                    <p>系級學號：<span id="info_Department"></span><span id="info_StudentID"></span></p>
+                    <p>E-mail：<span id="info_Email"></span></p>
+                </div>
+				<center>
+					<button type="submit" class="btn btn-primary btn-block">submit</button>
+				</center>
+			</form>
+        </div>
+        <div class="formloader loader-bar" data-rounded></div>
+    </div>
+    <!--footer -->
+    <footer></footer>
+</body>
+</html>
