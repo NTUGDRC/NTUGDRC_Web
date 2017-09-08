@@ -1,0 +1,52 @@
+{
+    "name": "NTUGDRC_Web",
+    "version": "0.0.1",
+    "description": "NTUGDRC web dev",
+    "main": "dist/ntugdrcweb.min.js",
+    "style": "dist/ntugdrcweb.min.css",
+    "scripts": {
+        "start": "npm run dev",
+        "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --colors",
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --watch --colors",
+        "test": "eslint src webpack"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "url": "git+https://github.com/WooLNinesun/NTUGDRC_Web.git",
+        "type": "git"
+    },
+    "keywords": [
+        "club web"
+    ],
+    "author": "WooLNinesun",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/WooLNinesun/NTUGDRC_Web/issues"
+    },
+    "homepage": "https://github.com/WooLNinesun/NTUGDRC_Web#readme",
+    "devDependencies": {
+        "autoprefixer": "^7.1.1",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.1.1",
+        "babel-preset-env": "^1.6.0",
+        "cross-env": "^5.0.1",
+        "css-loader": "^0.28.0",
+        "eslint": "^4.1.0",
+        "eslint-loader": "^1.9.0",
+        "exports-loader": "^0.6.4",
+        "extract-text-webpack-plugin": "^3.0.0",
+        "file-loader": "^0.11.1",
+        "git-revision-webpack-plugin": "^2.5.1",
+        "node-sass": "^4.5.0",
+        "postcss-loader": "^2.0.5",
+        "sass-loader": "^6.0.2",
+        "strip-loader": "^0.1.2",
+        "style-loader": "^0.18.1",
+        "template-string-optimize-loader": "^2.2.3",
+        "url-loader": "^0.5.7",
+        "webpack": "^3.1.0",
+        "webpack-dev-server": "^2.4.5"
+    }
+}
